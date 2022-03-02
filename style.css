@@ -2,3 +2,39 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
+
+/* Dipakek di banyak tempat */
+.container {
+    width: 860px;
+    margin: auto;   
+}
+
+/* Header */
+.header {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    margin-left: 40px;
+}
+
+.menu-item {
+    color: #595959;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.menu-item:hover {
+    color: #77287d;
+    text-decoration: underline;
+}
