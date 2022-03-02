@@ -129,6 +129,13 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 575px) {
+    .category-list {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+}
+
 .category-item {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgb(34 34 34 / 15%);
