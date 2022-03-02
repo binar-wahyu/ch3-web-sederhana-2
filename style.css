@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -5,8 +9,23 @@ body {
 
 /* Dipakek di banyak tempat */
 .container {
-    width: 860px;
+    max-width: 860px;
     margin: auto;   
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
 
 /* Header */
@@ -20,6 +39,12 @@ body {
     display: flex;
 }
 
+@media (max-width: 575px) {
+    .header-container {
+        flex-direction: column;
+    }
+}
+
 .logo {
     width: 100px;
 }
@@ -28,10 +53,21 @@ body {
     margin-left: 40px;
 }
 
+@media (max-width: 575px) {
+    .menu {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+}
+
 .menu-item {
     color: #595959;
     text-decoration: none;
     margin-right: 16px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
 }
 
 .menu-item:hover {
@@ -41,11 +77,22 @@ body {
 
 /* Banner */
 .banner {
-    align-items: center;
     background-image: url('images/banner.jpg');
     background-size: cover;
-    display: flex;
     height: 500px;
+}
+
+@media (max-width: 575px) {
+    .banner {
+        height: 250px;
+    }
+}
+
+.banner-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner-title {
@@ -54,10 +101,22 @@ body {
     margin-bottom: 0;
 }
 
+@media (max-width: 575px) {
+    .banner-title {
+        font-size: 28px;
+    }
+}
+
 .banner-subtitle {
     color: #595959;
     font-size: 20px;
     margin-top: 8px;
+}
+
+@media (max-width: 575px) {
+    .banner-subtitle {
+        font-size: 16px;
+    }
 }
 
 /* Category */
