@@ -150,3 +150,17 @@ body {
     padding: 8px 16px;
     width: 400px;
 }
+
+/* Footer */
+.footer {
+    background-color: #77287d;
+    color: #ffffff;
+    margin-top: 64px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
