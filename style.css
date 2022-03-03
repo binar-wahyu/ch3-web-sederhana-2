@@ -84,7 +84,7 @@ body {
 
 @media (max-width: 575px) {
     .banner {
-        height: 250px;
+        display: none;
     }
 }
 
@@ -227,6 +227,12 @@ body {
     width: 400px;
 }
 
+@media (max-width: 575px) {
+    .contact-input {
+        width: 100%;
+    }
+}
+
 .contact-button {
     background-color: #77287d;
     border: none;
@@ -234,6 +240,12 @@ body {
     display: block;
     padding: 8px 16px;
     width: 400px;
+}
+
+@media (max-width: 575px) {
+    .contact-button {
+        width: 100%;
+    }
 }
 
 /* Footer */
@@ -248,4 +260,10 @@ body {
 .footer .container {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 575px) {
+    .footer .container {
+        flex-direction: column;
+    }
 }
